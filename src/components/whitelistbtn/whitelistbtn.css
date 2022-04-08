@@ -1,0 +1,19 @@
+.btn-whitelist {
+    width: max-content;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: rgba(130, 0, 237, 0.80);
+    padding: 1rem 1.7rem;
+    border-radius: 9060px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.btn-whitelist:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
