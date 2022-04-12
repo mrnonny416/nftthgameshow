@@ -1,36 +1,55 @@
-import React from "react";
 import "./defaultpage.css";
-import ConnectBTN from "../connectbtn/ConnectBTN";
-import WhiteListBTN from "../whitelistbtn/WhiteListBTN";
-import Countdown from "../countdown/Countdown";
-const DefaultPage = () => {
+import SideTitle from "../sidetitle/SideTitle";
+import SideMenu from "../sidemenu/SideMenu";
+import RoadMap from "../roadmap/RoadMap";
+import Collab from "../collab/Collab";
+import Club from "../club/Club";
+const DefaultPage = ({ account, updateAccount, timeout, page, updatePage }) => {
+  const currentPage = (page) => {
+    if (page === 0) {
+      return (
+        <SideTitle
+          account={account}
+          updateAccount={updateAccount}
+          page={page}
+          updatePage={updatePage}
+        />
+      );
+    } else if (page === 1) {
+      return (
+        <RoadMap
+          account={account}
+          updateAccount={updateAccount}
+          page={page}
+          updatePage={updatePage}
+        />
+      );
+    } else if (page === 2) {
+      return (
+        <Collab
+          account={account}
+          updateAccount={updateAccount}
+          page={page}
+          updatePage={updatePage}
+        />
+      );
+    } else if (page === 3) {
+      return (
+        <Club
+          account={account}
+          updateAccount={updateAccount}
+          page={page}
+          updatePage={updatePage}
+        />
+      );
+    }
+  };
+
   return (
     <div className="container">
       <div className="container__content">
-        <div className="container__menu">
-          <div className="logo"></div>
-          <div>
-            <WhiteListBTN />
-            <Countdown />
-          </div>
-        </div>
-
-        <div className="container__title">
-          <div>
-            <ConnectBTN />
-          </div>
-          <div className="text-title">
-            SpecialNFT
-            <br />
-            Thailand
-            <br />
-            Game Show 2022
-            <br />
-            <text className="text-title-description">
-              The Lagest event in southest asia
-            </text>
-          </div>
-        </div>
+        <SideMenu timeout={timeout} setTimeout={setTimeout} />
+        {currentPage(page)}
       </div>
     </div>
   );
