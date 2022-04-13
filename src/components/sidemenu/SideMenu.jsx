@@ -8,6 +8,7 @@ const SideMenu = ({ setIsOvertime }) => {
   return (
     <div className="container__menu">
       <button className="logo" onClick={backpage}></button>
+      <div></div>
       <div>
         <WhiteListBTN />
         <Countdown />

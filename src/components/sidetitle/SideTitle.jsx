@@ -2,7 +2,7 @@ import React from "react";
 import ConnectBTN from "../connectbtn/ConnectBTN";
 import MenuBar from "../menubar/MenuBar";
 
-const SideTitle = ({ account, setAccount, page, setPage }) => {
+const SideTitle = ({ account, setAccount }) => {
   return (
     <div className="container__title">
       <div>
@@ -18,9 +18,6 @@ const SideTitle = ({ account, setAccount, page, setPage }) => {
         <div className="text-title-description">
           The Lagest event in southest asia
         </div>
-      </div>
-      <div>
-        <MenuBar page={page} setPage={setPage} />
       </div>
     </div>
   );
