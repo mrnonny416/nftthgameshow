@@ -2,11 +2,11 @@ import React from "react";
 import ConnectBTN from "../connectbtn/ConnectBTN";
 import MenuBar from "../menubar/MenuBar";
 
-const SideTitle = ({ account, updateAccount, page, updatePage }) => {
+const SideTitle = ({ account, setAccount, page, setPage }) => {
   return (
     <div className="container__title">
       <div>
-        <ConnectBTN account={account} updateAccount={updateAccount} />
+        <ConnectBTN account={account} setAccount={setAccount} />
       </div>
       <div className="text-title">
         SpecialNFT
@@ -20,7 +20,7 @@ const SideTitle = ({ account, updateAccount, page, updatePage }) => {
         </div>
       </div>
       <div>
-        <MenuBar page={page} updatePage={updatePage} />
+        <MenuBar page={page} setPage={setPage} />
       </div>
     </div>
   );

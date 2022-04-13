@@ -1,8 +1,8 @@
 import React from "react";
 import "./menubar.css";
-const MenuBar = ({ page, updatePage }) => {
+const MenuBar = ({ page, setPage }) => {
   const handleClick = (e) => {
-    updatePage(parseInt(e.target.id));
+    setPage(parseInt(e.target.id));
     console.log(e.target.id);
   };
 

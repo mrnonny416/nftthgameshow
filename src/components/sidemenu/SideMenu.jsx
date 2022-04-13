@@ -1,13 +1,16 @@
 import React from "react";
 import WhiteListBTN from "../whitelistbtn/WhiteListBTN";
 import Countdown from "../countdown/Countdown";
-const SideMenu = ({ timeout }) => {
+const SideMenu = ({ setIsOvertime }) => {
+  const backpage = () => {
+    set(0);
+  };
   return (
     <div className="container__menu">
-      <div className="logo"></div>
+      <button className="logo" onClick={backpage}></button>
       <div>
         <WhiteListBTN />
-        <Countdown timeout={timeout} setTimeout={setTimeout} />
+        <Countdown />
       </div>
     </div>
   );

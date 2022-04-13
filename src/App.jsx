@@ -3,10 +3,8 @@ import React, { useState, useEffect } from "react";
 
 function App() {
   const [account, setAccount] = useState("");
-  const [isLoging, setIsLoging] = useState(false);
-  const [isWhitelist, setIsWhitelist] = useState(false);
   const [timeout, setTimeout] = useState(new Date());
-  const [minted, setMinted] = useState(0);
+  const [isOvertime, setIsOvertime] = useState(false);
   const [page, setPage] = useState(0);
 
   const updateAccount = (newAccount) => {
@@ -19,15 +17,21 @@ function App() {
     setPage(newPage);
   };
 
+  const updateIsOvertime = (newIsOvertime) => {
+    setIsOvertime(newIsOvertime);
+  };
+
   return (
     <>
       <DefaultPage
         account={account}
-        updateAccount={updateAccount}
+        setAccount={updateAccount}
         timeout={timeout}
         setTimeout={updateTimeout}
         page={page}
-        updatePage={updatePage}
+        setPage={updatePage}
+        isOvertime={isOvertime}
+        setIsOvertime={updateIsOvertime}
       />
     </>
   );

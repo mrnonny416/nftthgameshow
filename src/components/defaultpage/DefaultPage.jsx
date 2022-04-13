@@ -4,42 +4,42 @@ import SideMenu from "../sidemenu/SideMenu";
 import RoadMap from "../roadmap/RoadMap";
 import Collab from "../collab/Collab";
 import Club from "../club/Club";
-const DefaultPage = ({ account, updateAccount, timeout, page, updatePage }) => {
+const DefaultPage = ({ account, setAccount, page, setPage, setIsOvertime }) => {
   const currentPage = (page) => {
     if (page === 0) {
       return (
         <SideTitle
           account={account}
-          updateAccount={updateAccount}
+          setAccount={setAccount}
           page={page}
-          updatePage={updatePage}
+          setPage={setPage}
         />
       );
     } else if (page === 1) {
       return (
         <RoadMap
           account={account}
-          updateAccount={updateAccount}
+          setAccount={setAccount}
           page={page}
-          updatePage={updatePage}
+          setPage={setPage}
         />
       );
     } else if (page === 2) {
       return (
         <Collab
           account={account}
-          updateAccount={updateAccount}
+          setAccount={setAccount}
           page={page}
-          updatePage={updatePage}
+          setPage={setPage}
         />
       );
     } else if (page === 3) {
       return (
         <Club
           account={account}
-          updateAccount={updateAccount}
+          setAccount={setAccount}
           page={page}
-          updatePage={updatePage}
+          setPage={setPage}
         />
       );
     }
@@ -48,8 +48,13 @@ const DefaultPage = ({ account, updateAccount, timeout, page, updatePage }) => {
   return (
     <div className="container">
       <div className="container__content">
-        <SideMenu timeout={timeout} setTimeout={setTimeout} />
-        {currentPage(page)}
+        <SideMenu setIsOvertime={setIsOvertime} />
+        <SideTitle
+          account={account}
+          setAccount={setAccount}
+          page={page}
+          setPage={setPage}
+        />
       </div>
     </div>
   );

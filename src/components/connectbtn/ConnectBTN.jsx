@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./connectbtn.css";
 
-const ConnectBTN = ({ account, updateAccount }) => {
+const ConnectBTN = ({ account, setAccount }) => {
   async function getAccount() {
     if (window.ethereum) {
       window.ethereum
@@ -14,7 +14,7 @@ const ConnectBTN = ({ account, updateAccount }) => {
 
   const accountChangeHandler = (newAccount) => {
     console.log(newAccount);
-    updateAccount(newAccount);
+    setAccount(newAccount);
   };
 
   function displayAddress(newAccount) {
