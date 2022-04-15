@@ -1,3 +1,30 @@
+.btn-menu-bg {
+    background: url(../../assets/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 100px;
+}
+
+.btn-menu-setting {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    /* padding-bottom: 1.2rem; */
+}
+
+.btn-menu-bg,
+.btn-menu-setting:hover {
+    color: rgb(232, 60, 209);
+
+    /* border: 1px solid rgb(60, 25, 203); */
+}
+
+
+
 .btn-menu,
 .btn-menu:after {
     width: 200px;

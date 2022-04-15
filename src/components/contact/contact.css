@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap');
+
+.container-contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    gap: 0.5rem;
+    background: url(../../assets/bg2.png);
+    background-size: cover;
+
+
+}
+
+.content-link {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 2rem;
+}
+
+.content-img {
+    /* border: 2px solid red; */
+}
+
+img {
+    width: 400px;
+}
+
+.content-description {
+    font-size: 40px;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+    font-family: 'Prompt', sans-serif;
+}
+
+a {
+    background: transparent;
+    padding: 0.9rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.discord:hover {
+    color: rgb(46, 73, 225);
+}
+
+.twitter:hover {
+    color: rgb(0, 179, 255);
+}
+
+.twitch:hover {
+    color: rgb(166, 0, 255);
+}
+
+.youtube:hover {
+    color: rgb(255, 0, 0);
+}

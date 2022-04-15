@@ -1,39 +1,59 @@
-.container__collab {
-    width: 100%;
-    height: 120vh;
+.container__minted-index {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    transition: all 1s;
-    background-image: url("../../assets/thgameart.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0px solid transparent;
-}
-
-.text {
-
-    width: 50vw;
-    height: 10vh;
-    font-weight: 600;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-
-    margin-top: 1rem;
-    margin-left: 3rem;
-    border: 1px solid transparent;
-    text-shadow: 3px 6px 10px #008cfff6;
-}
-
-.collab__content {
-    width: 100vw;
-    height: 55vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 25px;
     text-align: center;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
 
-    border: 2px solid red;
+.container__title__minted {
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* justify-content: end; */
+    /* border: 2px solid rgb(162, 142, 142); */
+
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+
+.img-nft-minted {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50%;
+    height: auto;
+    /* border: 2px solid rgb(3, 232, 248); */
+
+}
+
+.text-container-index {
+
+    height: 90px;
+    margin-top: 3rem;
+    background-image: url("../../assets/text-index.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 2px solid red; */
+    /* border: 2px solid rgb(6, 238, 207); */
+}
+
+.text-index {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 1rem;
+    margin-top: 5rem;
+
+    /* border: 2px solid rgb(72, 0, 255); */
 }

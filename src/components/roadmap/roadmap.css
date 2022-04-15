@@ -1,39 +1,84 @@
-.container__collab {
-    width: 100%;
-    height: 120vh;
+.container__minted-index {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    transition: all 1s;
-    background-image: url("../../assets/thgameart.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0px solid transparent;
-}
-
-.text {
-
-    width: 30vw;
-    height: 10vh;
-    font-weight: 600;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-
-    margin-top: 1rem;
-    margin-left: 3rem;
-    border: 1px solid transparent;
-    text-shadow: 3px 6px 10px #008cfff6;
-}
-
-.collab__content {
-    width: 100vw;
-    height: 55vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 25px;
     text-align: center;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
 
-    border: 2px solid red;
+.container__title__minted {
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* justify-content: end; */
+    /* border: 2px solid rgb(162, 142, 142); */
+
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+
+.img-nft-minted {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50%;
+    height: auto;
+    /* border: 2px solid rgb(3, 232, 248); */
+
+}
+
+.text-container-index-rd {
+
+    height: 90px;
+    margin-top: 3rem;
+    background-image: url("../../assets/text-index.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 2px solid red; */
+    /* border: 2px solid rgb(6, 238, 207); */
+}
+
+.text-index-rd {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 1rem;
+    /* margin-top: 5rem; */
+
+    /* border: 2px solid rgb(72, 0, 255); */
+}
+
+.btn-menu1-bg {
+    background: url(../../assets/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 100px;
+}
+
+.btn-menu1-setting {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    /* padding-bottom: 1.2rem; */
+}
+
+.btn-menu1-bg,
+.btn-menu1-setting:hover {
+    color: rgb(232, 60, 209);
+
+    /* border: 1px solid rgb(60, 25, 203); */
 }

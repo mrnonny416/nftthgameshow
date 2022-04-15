@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap');
+
+.container-contributor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid red; */
+    gap: 0.5rem;
+    background: url(../../assets/bg2.png);
+    background-size: cover;
+}
+
+.content-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 2px solid rgb(51, 0, 255); */
+}
+
+.text-contributor {
+    /* border: 2px solid rgb(119, 192, 185); */
+    margin-left: 1rem;
+}
+
+.text-title-contributor {
+    font-size: 6rem;
+    font-family: 'Prompt', sans-serif;
+}
+
+.text-description {
+    font-size: 2rem;
+    font-family: 'Prompt', sans-serif;
+    margin-top: -3rem;
+    margin-left: 1rem;
+}
+
+
+
+.content-link {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.content-sponsor {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.text-sponsor {
+    font-size: 1.5rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.hr-1 {
+    width: 20%;
+    height: 10px;
+    border: 1px solid rgb(243, 134, 18);
+    background-color: rgb(243, 134, 18);
+}
+
+.hr-2 {
+    width: 80%;
+    background-color: rgb(243, 134, 18);
+    border: 1px solid rgb(243, 134, 18);
+}
+
+
+.content-sponsor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80%;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.sponsor-img {
+    display: flex;
+    /* border: 1px solid rgb(243, 134, 18); */
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    background: transparent;
+    padding: 0.9rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.discord:hover {
+    color: rgb(46, 73, 225);
+}
+
+.twitter:hover {
+    color: rgb(0, 179, 255);
+}
+
+.twitch:hover {
+    color: rgb(166, 0, 255);
+}
+
+.youtube:hover {
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,35 @@
+.container__minted {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.container__title__minted {
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* justify-content: end; */
+    /* border: 2px solid red; */
+
+    background-image: url("../../assets/thgameart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+
+.img-nft-minted {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50%;
+    height: auto;
+}

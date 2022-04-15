@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import DateTimeDisplay from "./DateTimeDisplay";
 import { useCountdown } from "./useCountdown";
-const ExpiredNotice = () => {
+const ExpiredNotice = ({ setIsOvertime }) => {
   return <div className="expired-notice"></div>;
 };
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
@@ -19,12 +19,15 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
     </div>
   );
 };
-
-const CountdownTimer = memo(({ targetDate }) => {
+const setTime = ({ setIsOvertime }) => {
+  setIsOvertime(true);
+};
+const CountdownTimer = ({ targetDate, setIsOvertime }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
   if (days + hours + minutes + seconds <= 0) {
-    return <ExpiredNotice />;
+    setTime((setIsOvertime = { setIsOvertime }));
+    // return <ExpiredNotice setIsOvertime={setIsOvertime} />;
   } else {
     return (
       <ShowCounter
@@ -35,6 +38,6 @@ const CountdownTimer = memo(({ targetDate }) => {
       />
     );
   }
-});
+};
 
 export default CountdownTimer;
